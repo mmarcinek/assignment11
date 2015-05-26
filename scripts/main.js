@@ -7,12 +7,11 @@ console.log('This is cool!');
 //////////////////////////////////////////////////
 
 // 1. Write your own forEach function. It takes the array and the function (referred to as a callback) as arguments:
-var dinosaur = [
-    {name: 't-rex', diet: 'carnivore', period: 'Cretaceous'},
-    {name: 'brontosaurus', diet: 'herbivore', period: 'Jurassic'},
-    {name: 'velociraptor', dier: 'carnivore', period: 'Cretaceous'}
-    ]
-
+var people = [
+    {name: 'Danny', hometown: 'Augusta'},
+    {name: 'Mike', hometown: 'New York'},
+    {name: 'Leslie', hometown: 'Atlanta'}
+    ];
 
 
 function forEach(dinosaur, callback) { /* Do stuff */ }
