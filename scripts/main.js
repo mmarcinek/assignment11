@@ -7,8 +7,15 @@ console.log('This is cool!');
 //////////////////////////////////////////////////
 
 // 1. Write your own forEach function. It takes the array and the function (referred to as a callback) as arguments:
+var dinosaur = [
+    {name: 't-rex', diet: 'carnivore', period: 'Cretaceous'},
+    {name: 'brontosaurus', diet: 'herbivore', period: 'Jurassic'},
+    {name: 'velociraptor', dier: 'carnivore', period: 'Cretaceous'}
+    ]
 
-function forEach(list, callback) { /* Do stuff */ }
+
+
+function forEach(dinosaur, callback) { /* Do stuff */ }
 
 
 // 2. Write your own map, reduce, and filter functions that use your custom forEach to do their work.
