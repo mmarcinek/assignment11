@@ -15,11 +15,27 @@ var people = [
     ];
 
 
-function forEach(dinosaur, callback) { /* Do stuff */ }
+function forEach(list, callback){
+ for(var i = 0; i < list.length; i++){
+  callback(list[i]);
+ }
+};
 
+people.forEach(function(person){
+  console.log('Hi, my name is ' + person.name + ', I am from ' + person.hometown + '.');
+});
 
 // 2. Write your own map, reduce, and filter functions that use your custom forEach to do their work.
 
+function map(list, callback){
+  var newArray = [];
+  forEach(list, function(item) {
+  newArray.push(callback(item));
+};
+
+return newArray;
+
+};
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -31,7 +47,13 @@ function forEach(dinosaur, callback) { /* Do stuff */ }
 
 // 3. Write a function called pluck that extracts a list of property names:
 
-function pluck(list, propertyName) { /* Do stuff*/ }
+function pluck(list, propertyName) {
+  var items = [];
+  for(var i = 0; i < list.length; i++) {
+    items.push(list[i],[propertyName]);
+  }
+  return items;
+};
 
 var stooges = [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
 pluck(stooges, 'name');
