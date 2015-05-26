@@ -10,8 +10,8 @@ console.log('This is cool!');
 var dinosaur = [
     {name: 't-rex', diet: 'carnivore', period: 'Cretaceous'},
     {name: 'brontosaurus', diet: 'herbivore', period: 'Jurassic'},
-    {name: 'velociraptor', dier: 'carnivore', period: 'Cretaceous'}
-    ]
+    {name: 'velociraptor', diet: 'carnivore', period: 'Cretaceous'}
+    ];
 
 
 
